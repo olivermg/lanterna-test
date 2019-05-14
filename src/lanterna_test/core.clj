@@ -23,6 +23,7 @@
                                               (.setComponent panel-middle)))
                   (.addComponent panel-root (doto (Borders/doubleLineBevel "panel-right")
                                               (.setComponent panel-right)))
+                  (.setCloseWindowWithEscape this true)
                   (.setComponent this panel-root)
                   this)]
     (.setHints window [#_Window$Hint/EXPANDED
